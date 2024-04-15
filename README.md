@@ -7,10 +7,11 @@ chmod +x update.sh
 
 Set Up Cron:
 
+```
 crontab -e
 
-0 0 * * SAT sh /home/pi/update.sh 2>/home/pi/logs/cronlog
-
+>0 0 * * SAT sh /home/pi/update.sh 2>/home/pi/logs/cronlog
+```
 In order to redirect STDERR you have to specify “2>”
 
 This is handy when writing crontab expressions:
